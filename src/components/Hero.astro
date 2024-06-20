@@ -1,0 +1,81 @@
+---
+import Icon from "../components/Logo.astro";
+const { src = "../public/Logo-DevTools.png" } = Astro.props;
+---
+
+<section class="hero pl-40 my-28">
+  <div class="container flex mx-auto items-center justify-end">
+    <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
+      <div class="flex flex-col items-center gap-8 md:items-start">
+        <h1
+          class="text-center text-4xl font-bold text-gray-800 md:text-left lg:text-6xl transition-opacity duration-1000 ease-in-out transform translate-y-4 opacity-0"
+          id="title"
+        >
+          Bienvenidos a <span class="text-red-500 font-bold">Dev</span><span
+            class="text-blue-500">Tools</span
+          >
+        </h1>
+        <p
+          class="mt-4 text-lg px-auto text-gray-600 transition-opacity duration-1000 ease-in-out transform translate-x-4 opacity-0"
+          id="paragraph"
+        >
+          Esta página está diseñada para que los desarrolladores encuentren
+          todas las herramientas que necesitan en un solo lugar. Naveguen,
+          exploren y encuentren rápidamente la herramienta perfecta para cada
+          proyecto.
+        </p>
+        <div
+          class="flex flex-col gap-3 min-[500px]:flex-row transition-opacity duration-1000 ease-in-out transform translate-x-4 opacity-0"
+          id="buttons"
+        >
+          <a
+            class="justify-center gap-2 bg-slate-900 space-x-2 text-base text-white cursor-pointer hover:bg-slate-900 hover:text-white
+            focus:ring-4 focus: outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg
+            px-5 py-2.5 text-center inline-flex items-center dark: focus:ring- [#1dalf2]/55
+            mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out
+            hover:scale-110 scale-90 gap-x-2 opacity-70 hover:opacity-100"
+            href="
+            #"
+          >
+            Contribuir
+          </a>
+          <a
+            class="flex-row justify-center text-black cursor-pointer hover:bg-gray-800 hover:text-white
+            focus:ring-4 focus: outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg
+            px-5 py-2.5 text-center inline-flex items-center dark: focus:ring- [#1dalf2]/55
+            mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out
+            hover:scale-110 scale-90 gap-x-2 opacity-70 hover:opacity-100"
+            href="https://github.com"
+            target="_blank"
+          >
+            GitHub
+          </a>
+        </div>
+      </div>
+      <img
+        class="lg:block w-auto h-auto transition-opacity duration-1000 ease-in-out transform translate-y-4"
+        src="/src/assets/Logo-DevTools.png"
+        alt="Logo-DevTools"
+        id="Imagen"
+      />
+    </div>
+  </div>
+</section>
+
+<script>
+  // JavaScript para animaciones
+  document.addEventListener("DOMContentLoaded", () => {
+    document
+      .getElementById("title")
+      .classList.remove("translate-y-4", "opacity-0");
+    document
+      .getElementById("paragraph")
+      .classList.remove("translate-x-4", "opacity-0");
+    document
+      .getElementById("buttons")
+      .classList.remove("translate-x-4", "opacity-0");
+    document
+      .getElementById("image")
+      .classList.remove("translate-y-4", "opacity-0");
+  });
+</script>
